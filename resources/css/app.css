@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #ff0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 550px;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ff0000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+    text-align: right;
+    font-size: 24px;
+    width: 380px;
+    height: 60px;
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+button {
+    width: 93px;
+    padding: 8px;
+    margin: 2px 2px;
+    position: relative;
+    margin-left: 2px;
+    margin-right: 1px;
+    top: 30px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.5s;
+    background-color: #3e3e3e;
+    border-radius: 5px;
+    color: white;
+}
+
+button:hover {
+    background-color: #ffffff;
+    font-weight: 700;
+    color: #000;
+}
+
+button.clear {
+    grid-column: span 2;
+    background-color: #ff172e;
+}
+button.clear:hover {
+    background-color: #fff;
+    color: #ff172e;
+}
+
+.btn-eql {
+    background-color: green;
+    width: 290px;
+}
+.btn-eql:hover {
+    background-color: #fff;
+    color: green;
+}
+.btn-cal {
+    background-color: orangered;
+}
+.btn-cal:hover {
+    background-color: #fff;
+    color: #000;
+}
+.btn-brr {
+    background-color: #949494;
+}
+.btn-brr:hover {
+    background-color: #fff;
+    color: #000;
+}
